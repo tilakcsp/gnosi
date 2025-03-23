@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnosi - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <nav class="top-nav">
+        <div class="waitlist-badge">
+            <i class="fas fa-star"></i> Waitlist
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="form-view">
+            <h1 class="main-title">Coming soon!</h1>
+            
+            <div class="glass-card">
+                <h2>Join our waitlist</h2>
+                <p class="subtitle">Sign up for our newsletter to receive the latest updates<br>and insights straight to your inbox.</p>
+                
+                <form id="waitlistForm" class="waitlist-form">
+                    <div class="form-group">
+                        <input type="text" id="email" placeholder="Enter email" required>
+                        <span class="error-message">Enter valid email address</span>
+                    </div>
+                    
+                    <p class="option-label">How do you plan to use Gnosi?</p>
+                    <div class="option-buttons">
+                        <label class="option-btn">
+                            <input type="checkbox" name="useCase" value="linkedin">
+                            <span class="btn-content">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn Article
+                            </span>
+                        </label>
+                        <label class="option-btn">
+                            <input type="checkbox" name="useCase" value="youtube">
+                            <span class="btn-content">
+                                <i class="fab fa-youtube"></i>
+                                YouTube Script
+                            </span>
+                        </label>
+                        <label class="option-btn">
+                            <input type="checkbox" name="useCase" value="newsletter">
+                            <span class="btn-content">
+                                <i class="far fa-newspaper"></i>
+                                Newsletter
+                            </span>
+                        </label>
+                        <label class="option-btn">
+                            <input type="checkbox" name="useCase" value="blog">
+                            <span class="btn-content">
+                                <i class="fas fa-blog"></i>
+                                Blog
+                            </span>
+                        </label>
+                        <span class="error-message options-error">Please select at least one option</span>
+                    </div>
+
+                    <button type="submit" class="join-btn">Join Waitlist</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="success-view hidden">
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            
+            <div class="glass-card success-card">
+                <h2>We have received your request</h2>
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>We'll notify you as for your early access soon!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>©2024 Waitlist Template • Build by Framor • 404</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
