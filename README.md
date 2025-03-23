@@ -1,37 +1,89 @@
 # Gnosi Waitlist
 
-A waitlist management system for Gnosi.
+A modern waitlist management system for Gnosi learning platform that handles user registration and notifications.
 
 ## Description
 
-This project manages the waitlist functionality for the Gnosi platform.
+Gnosi Waitlist is a Flask-based application that manages the pre-launch registration process for the Gnosi learning platform. It handles user signups, email verifications, and automated notifications for product launches and updates.
+
+## Tech Stack
+
+- Python 3.8+
+- Flask
+- SQLAlchemy
+- PostgreSQL
+- Redis (for queue management)
+- Celery (for background tasks)
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Clone the repository:
+```bash
+git clone https://github.com/tilakcsp/gnosi
+cd gnosi
+```
+
+2. Create and activate virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # For Linux/Mac
+venv\Scripts\activate     # For Windows
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
+4. Set up environment variables:
+```bash
+cp .env.example .env
+# Edit .env with your configurations
+```
+
+5. Initialize the database:
+```bash
+flask db upgrade
+```
+
 ## Usage
 
-Describe how to run and use the application.
+1. Start the development server:
+```bash
+flask run
+```
+
+2. Start Celery worker (in a separate terminal):
+```bash
+celery -A app.celery worker --loglevel=info
+```
+
+3. Access the application at `http://localhost:5000`
+
+### API Endpoints
+
+- `POST /api/register` - Register new user
+- `GET /api/status` - Check waitlist position
+- `POST /api/verify` - Verify email address
 
 ## Features
 
-- Waitlist management
-- User registration
-- Email notifications
+- Secure user registration and data storage
+- Email verification system
+- Automated position tracking in waitlist
+- Admin dashboard for waitlist management
+- RESTful API endpoints
+- Rate limiting and spam protection
+- Background task processing
+- Email notifications for:
+  - Registration confirmation
+  - Position updates
+  - Launch announcements
 
-## Contributing
 
-Instructions for contributing to the project.
-
-## License
-
-Specify the license here.
 
 ## Contact
 
-How to reach the maintainers.
+Project Maintainer - Tilak
+Project Link: https://github.com/tilakcsp/gnosi
+
