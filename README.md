@@ -1,4 +1,7 @@
-![image](https://github.com/user-attachments/assets/ffecc73d-e143-4d2e-bc72-76c330e964b0)
+![image](https://github.com/user-attachments/assets/f8123c11-5861-441e-8814-71011d328193)
+![image](https://github.com/user-attachments/assets/d8a3328b-f6b8-4e1e-8543-ac73618b70c3)
+
+
 
 # Gnosi Waitlist
 
