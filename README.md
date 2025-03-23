@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/ffecc73d-e143-4d2e-bc72-76c330e964b0)
+
 # Gnosi Waitlist
 
 A modern waitlist management system for Gnosi social media agentic content creation platform that handles user registration and notifications.
