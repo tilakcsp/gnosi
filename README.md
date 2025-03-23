@@ -1,10 +1,10 @@
 # Gnosi Waitlist
 
-A modern waitlist management system for Gnosi learning platform that handles user registration and notifications.
+A modern waitlist management system for Gnosi social media agentic content creation platform that handles user registration and notifications.
 
 ## Description
 
-Gnosi Waitlist is a Flask-based application that manages the pre-launch registration process for the Gnosi learning platform. It handles user signups, email verifications, and automated notifications for product launches and updates.
+Gnosi Waitlist is a Flask-based application that manages the pre-launch registration process for the Gnosi platform. It handles user signups, email verifications, and automated notifications for product launches and updates.
 
 ## Tech Stack
 
